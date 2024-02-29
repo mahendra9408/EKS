@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-west-2"
 }
 
-resource "aws_eks_cluster" "my-cluster" {
+resource "aws_eks_cluster" "my_cluster" {
   name     = "my-cluster"
   role_arn = aws_iam_role.my_eks_cluster_role.arn
 
